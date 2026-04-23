@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+
   <header class="header">
     <nav class="nav">
       <a href="#home" class="logo">dev.demo</a>
@@ -34,7 +35,7 @@
       <div class="hero-container">
         <div class="hero-left">
           <p class="hero-kicker">interactive frontend concept</p>
-          <h1>Учебный портфолио-сайт с анимацией, интерактивом и современным интерфейсом</h1>
+          <h1>Учебный "портфолио" сайт</h1>
           <p class="hero-text">
             Это демонстрационный проект: первый экран с анимированной сценой,
             карточки проектов, модальное окно, переключение темы, адаптивное меню
@@ -42,8 +43,8 @@
           </p>
 
           <div class="hero-buttons">
-            <a href="#projects" class="hero-link-btn primary-btn">Смотреть проекты</a>
-            <a href="#features" class="hero-link-btn secondary-btn">Что умеет сайт</a>
+            <a href="#projects" class="hero-link-btn primary-btn interactive-element">Смотреть проекты</a>
+            <a href="#features" class="hero-link-btn secondary-btn interactive-element">Что умеет сайт</a>
           </div>
 
           <div class="hero-stats">
@@ -79,7 +80,6 @@
             <div class="floating-badge badge-html">HTML</div>
             <div class="floating-badge badge-css">CSS</div>
             <div class="floating-badge badge-js">JS</div>
-
             <div class="floating-badge badge-react">React</div>
             <div class="floating-badge badge-api">API</div>
             <div class="floating-badge badge-git">Git</div>
@@ -125,13 +125,28 @@
                       <span class="dev-tag">fetch("/api/data")</span>
                     </div>
 
-                    <div class="hero-slider-card">
-                      <div class="slider-top">
-                        <span class="slider-label">preview</span>
-                        <span class="slider-counter"><span id="slider-current">01</span>/03</span>
+                    <div class="mock-app">
+                      <div class="mock-app__toolbar">
+                        <button class="mock-app__tool interactive-element">Run</button>
+                        <button class="mock-app__tool interactive-element">Build</button>
+                        <button class="mock-app__tool interactive-element">Deploy</button>
+                        <div class="mock-app__status">status: ready</div>
                       </div>
 
-                      <div class="slider-track">
+                      <div class="mock-app__controls">
+                        <button class="mock-app__button mock-app__button--primary interactive-element">Open modal</button>
+                        <button class="mock-app__button mock-app__button--ghost interactive-element">Switch theme</button>
+                        <button class="mock-app__button mock-app__button--ghost interactive-element">Preview</button>
+                      </div>
+                    </div>
+
+                    <div class="hero-slider-card hero-slider-card--bem">
+                      <div class="hero-slider-card__top">
+                        <span class="hero-slider-card__label">preview</span>
+                        <span class="hero-slider-card__counter"><span id="slider-current">01</span>/03</span>
+                      </div>
+
+                      <div class="hero-slider-card__track">
                         <article class="slide active" data-title="Landing Concept" data-text="Адаптивная промо-страница с плавными блоками и аккуратным hero-экраном.">
                           <div class="slide-visual visual-1"></div>
                         </article>
@@ -145,15 +160,15 @@
                         </article>
                       </div>
 
-                      <div class="slider-info">
+                      <div class="hero-slider-card__info">
                         <h3 id="slider-title">Landing Concept</h3>
                         <p id="slider-text">Адаптивная промо-страница с плавными блоками и аккуратным hero-экраном.</p>
                       </div>
 
-                      <div class="slider-dots">
-                        <button class="slider-dot active" data-slide="0" aria-label="Слайд 1"></button>
-                        <button class="slider-dot" data-slide="1" aria-label="Слайд 2"></button>
-                        <button class="slider-dot" data-slide="2" aria-label="Слайд 3"></button>
+                      <div class="hero-slider-card__dots">
+                        <button class="slider-dot interactive-element active" data-slide="0" aria-label="Слайд 1"></button>
+                        <button class="slider-dot interactive-element" data-slide="1" aria-label="Слайд 2"></button>
+                        <button class="slider-dot interactive-element" data-slide="2" aria-label="Слайд 3"></button>
                       </div>
                     </div>
 
@@ -170,6 +185,10 @@
               </div>
 
               <div class="laptop-base">
+                <div class="laptop-base__content">
+                  <span class="laptop-base__label">dev.demo</span>
+                  <span class="laptop-base__line"></span>
+                </div>
                 <div class="laptop-shadow"></div>
               </div>
             </div>
@@ -210,7 +229,7 @@
         <h2>Демо-проекты</h2>
 
         <div class="project-grid">
-          <article class="project-card"
+          <article class="project-card interactive-element"
             data-title="Landing Concept"
             data-description="Большой промо-сайт с выразительным hero-блоком, секциями преимуществ и аккуратной визуальной структурой."
           >
@@ -222,7 +241,7 @@
             </div>
           </article>
 
-          <article class="project-card"
+          <article class="project-card interactive-element"
             data-title="Portfolio Showcase"
             data-description="Портфолио-интерфейс с тёмной и светлой темой, плавной навигацией и анимированной подачей."
           >
@@ -234,7 +253,7 @@
             </div>
           </article>
 
-          <article class="project-card"
+          <article class="project-card interactive-element"
             data-title="Store Interface"
             data-description="Интерфейс интернет-магазина: каталог, акцентные карточки и современная композиция элементов."
           >
@@ -316,8 +335,8 @@
         </p>
 
         <div class="contact-buttons">
-          <a href="#home" class="contact-link">Наверх</a>
-          <a href="#projects" class="contact-link secondary-contact-link">Открыть проекты</a>
+          <a href="#home" class="contact-link interactive-element">Наверх</a>
+          <a href="#projects" class="contact-link secondary-contact-link interactive-element">Открыть проекты</a>
         </div>
       </div>
     </section>
@@ -325,11 +344,11 @@
 
   <div class="modal">
     <div class="modal-content">
-      <button class="close-modal" aria-label="Закрыть окно">×</button>
+      <button class="close-modal interactive-element" aria-label="Закрыть окно">×</button>
       <span class="modal-tag">project preview</span>
       <h3 class="modal-title">Project title</h3>
       <p class="modal-description">Project description</p>
-      <button class="modal-action">Закрыть</button>
+      <button class="modal-action interactive-element">Закрыть</button>
     </div>
   </div>
 
