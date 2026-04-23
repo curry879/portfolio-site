@@ -3,176 +3,305 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
+  <title>Frontend Portfolio Demo</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header class="header">
     <nav class="nav">
-      <h1 class="logo">Curry</h1>
+      <a href="#home" class="logo">dev.demo</a>
 
-      <div class="burger">☰</div>
+      <button class="burger" aria-label="Открыть меню">☰</button>
 
       <ul class="menu">
         <li><a href="#home">Главная</a></li>
-        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#about">О проекте</a></li>
         <li><a href="#projects">Проекты</a></li>
+        <li><a href="#features">Функции</a></li>
         <li><a href="#contacts">Контакты</a></li>
       </ul>
 
-      <button class="theme-toggle">🌙</button>
+      <button class="theme-toggle" aria-label="Переключить тему">🌙</button>
     </nav>
   </header>
 
-  <section id="home" class="hero">
-    <div class="hero-bg-orb orb-1"></div>
-    <div class="hero-bg-orb orb-2"></div>
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
 
-    <div class="hero-container">
-      <div class="hero-left">
-        <p class="hero-kicker">Frontend Developer</p>
-        <h2>Создаю современные сайты с красивой анимацией и сильной подачей</h2>
-        <p class="hero-text">
-          Изучаю HTML, CSS и JavaScript. Собираю стильные интерфейсы,
-          адаптивные страницы и интерактивные элементы.
-        </p>
+      <div class="hero-container">
+        <div class="hero-left">
+          <p class="hero-kicker">interactive frontend concept</p>
+          <h1>Учебный портфолио-сайт с сильной визуальной подачей</h1>
+          <p class="hero-text">
+            Это демонстрационный проект: современный hero-экран, анимированная
+            сцена, карточки проектов, модальное окно, переключение темы,
+            адаптивное меню и плавная навигация.
+          </p>
 
-        <div class="hero-buttons">
-          <a href="#projects" class="hero-link-btn">Мои работы</a>
-          <a href="#contacts" class="hero-link-btn btn-secondary">Связаться</a>
+          <div class="hero-buttons">
+            <a href="#projects" class="hero-link-btn primary-btn">Смотреть проекты</a>
+            <a href="#features" class="hero-link-btn secondary-btn">Что умеет сайт</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-card">
+              <strong>UI</strong>
+              <span>сильный первый экран</span>
+            </div>
+            <div class="stat-card">
+              <strong>JS</strong>
+              <span>слайдер, модалка, тема</span>
+            </div>
+            <div class="stat-card">
+              <strong>CSS</strong>
+              <span>анимации и адаптив</span>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div class="hero-right">
-        <div class="hero-scene">
-          <div class="float-card float-card-top">
-            <span class="float-dot"></span>
-            <span class="float-line short"></span>
-            <span class="float-line"></span>
-          </div>
+        <div class="hero-right">
+          <div class="scene">
+            <div class="floating-panel floating-panel-top">
+              <div class="tiny-dot purple"></div>
+              <div class="tiny-line short"></div>
+              <div class="tiny-line"></div>
+            </div>
 
-          <div class="float-card float-card-bottom">
-            <span class="badge purple">JS</span>
-            <span class="badge blue">CSS</span>
-            <span class="badge dark">UI</span>
-          </div>
+            <div class="floating-panel floating-panel-bottom">
+              <span class="chip chip-js">JS</span>
+              <span class="chip chip-css">CSS</span>
+              <span class="chip chip-ui">UI</span>
+            </div>
 
-          <div class="laptop">
-            <div class="laptop-screen">
-              <div class="screen-topbar">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
+            <div class="floating-badge badge-html">HTML</div>
+            <div class="floating-badge badge-css">CSS</div>
+            <div class="floating-badge badge-js">JS</div>
 
-              <div class="code-window">
-                <div class="code-sidebar">
-                  <span></span>
+            <div class="laptop">
+              <div class="laptop-screen">
+                <div class="screen-bar">
                   <span></span>
                   <span></span>
                   <span></span>
                 </div>
 
-                <div class="code-content">
-                  <div class="code-line w-90"><span class="code-pink"></span></div>
-                  <div class="code-line w-70"><span class="code-blue"></span></div>
-                  <div class="code-line w-80"><span class="code-purple"></span></div>
-                  <div class="code-line w-60"><span class="code-green"></span></div>
-                  <div class="code-line w-85"><span class="code-blue"></span></div>
-                  <div class="code-line w-50"><span class="code-pink"></span></div>
+                <div class="screen-body">
+                  <div class="sidebar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
 
-                  <div class="mini-panel">
-                    <div class="mini-panel-title">component.jsx</div>
-                    <div class="mini-line"></div>
-                    <div class="mini-line short"></div>
-                    <div class="mini-line"></div>
+                  <div class="screen-main">
+                    <div class="code-lines">
+                      <div class="code-line w90 blue"></div>
+                      <div class="code-line w70 pink"></div>
+                      <div class="code-line w80 purple"></div>
+                      <div class="code-line w60 green"></div>
+                      <div class="code-line w85 blue"></div>
+                    </div>
+
+                    <div class="hero-slider-card">
+                      <div class="slider-top">
+                        <span class="slider-label">preview</span>
+                        <span class="slider-counter"><span id="slider-current">01</span>/03</span>
+                      </div>
+
+                      <div class="slider-track">
+                        <article class="slide active" data-title="Landing Concept" data-text="Адаптивная промо-страница с плавными блоками и сильным hero-экраном.">
+                          <div class="slide-visual visual-1"></div>
+                        </article>
+
+                        <article class="slide" data-title="Portfolio UI" data-text="Минималистичный интерфейс портфолио со светлой и тёмной темой.">
+                          <div class="slide-visual visual-2"></div>
+                        </article>
+
+                        <article class="slide" data-title="Store Interface" data-text="Концепт интернет-магазина с карточками, фильтрами и чистой сеткой.">
+                          <div class="slide-visual visual-3"></div>
+                        </article>
+                      </div>
+
+                      <div class="slider-info">
+                        <h3 id="slider-title">Landing Concept</h3>
+                        <p id="slider-text">Адаптивная промо-страница с плавными блоками и сильным hero-экраном.</p>
+                      </div>
+
+                      <div class="slider-dots">
+                        <button class="slider-dot active" data-slide="0" aria-label="Слайд 1"></button>
+                        <button class="slider-dot" data-slide="1" aria-label="Слайд 2"></button>
+                        <button class="slider-dot" data-slide="2" aria-label="Слайд 3"></button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="laptop-base">
-              <div class="laptop-shadow"></div>
+              <div class="laptop-base">
+                <div class="laptop-shadow"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about hidden">
+      <div class="container">
+        <p class="section-tag">about demo</p>
+        <h2>Это учебный проект для демонстрации функциональности</h2>
+        <p class="section-text">
+          Здесь не важна реальная личная информация. Этот макет нужен, чтобы
+          показать верстку, взаимодействия, анимации, адаптив, визуальную
+          композицию и работу JavaScript в интерфейсе.
+        </p>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>HTML</h3>
+            <p>Семантическая структура, секции, навигация, карточки, модальное окно.</p>
+          </div>
+          <div class="skill-card">
+            <h3>CSS</h3>
+            <p>Градиенты, сетки, hover-эффекты, анимации, glassmorphism и адаптив.</p>
+          </div>
+          <div class="skill-card">
+            <h3>JavaScript</h3>
+            <p>Слайдер, бургер-меню, модалка, reveal-анимации и переключение темы.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects hidden">
+      <div class="container">
+        <p class="section-tag">projects</p>
+        <h2>Демо-проекты</h2>
+
+        <div class="project-grid">
+          <article class="project-card"
+            data-title="Landing Concept"
+            data-description="Большой промо-сайт с выразительным hero-блоком, секциями преимуществ и чистой визуальной структурой."
+          >
+            <div class="project-preview preview-one"></div>
+            <div class="project-content">
+              <span class="project-type">landing</span>
+              <h3>Landing Concept</h3>
+              <p>Сильный первый экран, секции преимуществ и визуально дорогая подача.</p>
+            </div>
+          </article>
+
+          <article class="project-card"
+            data-title="Portfolio Showcase"
+            data-description="Портфолио-интерфейс с тёмной и светлой темой, плавной навигацией и анимированной подачей."
+          >
+            <div class="project-preview preview-two"></div>
+            <div class="project-content">
+              <span class="project-type">portfolio</span>
+              <h3>Portfolio Showcase</h3>
+              <p>Учебный концепт для демонстрации UI, анимаций и интерактива.</p>
+            </div>
+          </article>
+
+          <article class="project-card"
+            data-title="Store Interface"
+            data-description="Интерфейс интернет-магазина: каталог, акцентные карточки и современная композиция элементов."
+          >
+            <div class="project-preview preview-three"></div>
+            <div class="project-content">
+              <span class="project-type">store ui</span>
+              <h3>Store Interface</h3>
+              <p>Гибкая сетка, аккуратные карточки и clean-style визуал.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features hidden">
+      <div class="container">
+        <p class="section-tag">features</p>
+        <h2>Что уже реализовано</h2>
+
+        <div class="feature-list">
+          <div class="feature-item">
+            <strong>01</strong>
+            <div>
+              <h3>Плавная навигация</h3>
+              <p>Секции открываются мягко, с учетом высоты фиксированной шапки.</p>
             </div>
           </div>
 
-          <div class="floating-icon icon-html">HTML</div>
-          <div class="floating-icon icon-css">CSS</div>
-          <div class="floating-icon icon-js">JS</div>
+          <div class="feature-item">
+            <strong>02</strong>
+            <div>
+              <h3>Hero-сцена</h3>
+              <p>Декоративный “ноутбук”, плавающие элементы, кодовые линии и UI-композиция.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <strong>03</strong>
+            <div>
+              <h3>Авто-слайдер</h3>
+              <p>На экране hero-карточки переключаются автоматически и по точкам.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <strong>04</strong>
+            <div>
+              <h3>Модальное окно</h3>
+              <p>Карточки проектов открывают отдельное окно с текстом и заголовком.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <strong>05</strong>
+            <div>
+              <h3>Светлая тема</h3>
+              <p>Кнопка в шапке переключает всю палитру и карточки сайта.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <strong>06</strong>
+            <div>
+              <h3>Адаптивность</h3>
+              <p>На мобильных работает бургер, hero перестраивается и блоки идут колонкой.</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="about" class="about hidden">
-    <div class="container">
-      <h2>Обо мне</h2>
-      <p>
-        Я начинающий frontend developer. Изучаю HTML, CSS, JavaScript
-        и создаю современные сайты.
-      </p>
+    <section id="contacts" class="contacts hidden">
+      <div class="container">
+        <p class="section-tag">contacts</p>
+        <h2>Финальный демонстрационный блок</h2>
+        <p class="section-text">
+          Здесь позже можно поставить Telegram, GitHub, email, форму или реальные ссылки.
+          Пока это учебный раздел, который завершает страницу и показывает полноценную структуру сайта.
+        </p>
 
-      <div class="skills">
-        <div class="skill-card">HTML</div>
-        <div class="skill-card">CSS</div>
-        <div class="skill-card">JavaScript</div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="projects hidden">
-    <div class="container">
-      <h2>Проекты</h2>
-
-      <div class="project-cards">
-        <div
-          class="project-card"
-          data-title="Landing Page"
-          data-description="Современный сайт для бизнеса с адаптивной версткой, анимациями и красивым интерфейсом."
-        >
-          <img src="images/project1.jpg" alt="Landing Page" />
-          <h3>Landing Page</h3>
-          <p>Современный сайт для бизнеса</p>
-        </div>
-
-        <div
-          class="project-card"
-          data-title="Portfolio"
-          data-description="Личный сайт-портфолио с темной темой, плавным скроллом и модальными окнами."
-        >
-          <img src="images/project2.jpg" alt="Portfolio" />
-          <h3>Portfolio</h3>
-          <p>Личный сайт портфолио</p>
-        </div>
-
-        <div
-          class="project-card"
-          data-title="Online Store"
-          data-description="Интернет-магазин с современным дизайном, карточками товаров и удобной структурой."
-        >
-          <img src="images/project3.jpg" alt="Online Store" />
-          <h3>Online Store</h3>
-          <p>Интернет-магазин</p>
+        <div class="contact-buttons">
+          <a href="#home" class="contact-link">Наверх</a>
+          <a href="#projects" class="contact-link secondary-contact-link">Открыть проекты</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section id="contacts" class="about hidden">
-    <div class="container">
-      <h2>Контакты</h2>
-      <p>
-        Здесь позже можно добавить Telegram, GitHub, email или форму обратной связи.
-      </p>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <div class="modal">
     <div class="modal-content">
-      <span class="close-modal">&times;</span>
-      <h2 class="modal-title">Название проекта</h2>
-      <p class="modal-description">Описание проекта</p>
-      <button class="modal-button">Посмотреть</button>
+      <button class="close-modal" aria-label="Закрыть окно">×</button>
+      <span class="modal-tag">project preview</span>
+      <h3 class="modal-title">Project title</h3>
+      <p class="modal-description">Project description</p>
+      <button class="modal-action">Закрыть</button>
     </div>
   </div>
 
