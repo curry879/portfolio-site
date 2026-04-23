@@ -34,11 +34,11 @@
       <div class="hero-container">
         <div class="hero-left">
           <p class="hero-kicker">interactive frontend concept</p>
-          <h1>Учебный портфолио-сайт с сильной визуальной подачей</h1>
+          <h1>Учебный портфолио-сайт с анимацией, интерактивом и современным интерфейсом</h1>
           <p class="hero-text">
-            Это демонстрационный проект: современный hero-экран, анимированная
-            сцена, карточки проектов, модальное окно, переключение темы,
-            адаптивное меню и плавная навигация.
+            Это демонстрационный проект: первый экран с анимированной сценой,
+            карточки проектов, модальное окно, переключение темы, адаптивное меню
+            и плавная навигация по странице.
           </p>
 
           <div class="hero-buttons">
@@ -49,7 +49,7 @@
           <div class="hero-stats">
             <div class="stat-card">
               <strong>UI</strong>
-              <span>сильный первый экран</span>
+              <span>первый экран и композиция</span>
             </div>
             <div class="stat-card">
               <strong>JS</strong>
@@ -80,6 +80,10 @@
             <div class="floating-badge badge-css">CSS</div>
             <div class="floating-badge badge-js">JS</div>
 
+            <div class="floating-badge badge-react">React</div>
+            <div class="floating-badge badge-api">API</div>
+            <div class="floating-badge badge-git">Git</div>
+
             <div class="laptop">
               <div class="laptop-screen">
                 <div class="screen-bar">
@@ -97,12 +101,28 @@
                   </div>
 
                   <div class="screen-main">
+                    <div class="code-header-tags">
+                      <span>&lt;header&gt;</span>
+                      <span>.hero</span>
+                      <span>#app</span>
+                      <span>.card-grid</span>
+                    </div>
+
                     <div class="code-lines">
                       <div class="code-line w90 blue"></div>
                       <div class="code-line w70 pink"></div>
                       <div class="code-line w80 purple"></div>
                       <div class="code-line w60 green"></div>
                       <div class="code-line w85 blue"></div>
+                    </div>
+
+                    <div class="dev-tags">
+                      <span class="dev-tag">function initUI()</span>
+                      <span class="dev-tag">const themeToggle</span>
+                      <span class="dev-tag">display: grid</span>
+                      <span class="dev-tag">class="project-card"</span>
+                      <span class="dev-tag">npm run dev</span>
+                      <span class="dev-tag">fetch("/api/data")</span>
                     </div>
 
                     <div class="hero-slider-card">
@@ -112,7 +132,7 @@
                       </div>
 
                       <div class="slider-track">
-                        <article class="slide active" data-title="Landing Concept" data-text="Адаптивная промо-страница с плавными блоками и сильным hero-экраном.">
+                        <article class="slide active" data-title="Landing Concept" data-text="Адаптивная промо-страница с плавными блоками и аккуратным hero-экраном.">
                           <div class="slide-visual visual-1"></div>
                         </article>
 
@@ -127,7 +147,7 @@
 
                       <div class="slider-info">
                         <h3 id="slider-title">Landing Concept</h3>
-                        <p id="slider-text">Адаптивная промо-страница с плавными блоками и сильным hero-экраном.</p>
+                        <p id="slider-text">Адаптивная промо-страница с плавными блоками и аккуратным hero-экраном.</p>
                       </div>
 
                       <div class="slider-dots">
@@ -135,6 +155,15 @@
                         <button class="slider-dot" data-slide="1" aria-label="Слайд 2"></button>
                         <button class="slider-dot" data-slide="2" aria-label="Слайд 3"></button>
                       </div>
+                    </div>
+
+                    <div class="class-cloud">
+                      <span>.container</span>
+                      <span>.nav-link</span>
+                      <span>.theme-toggle</span>
+                      <span>.modal-active</span>
+                      <span>.grid-template-columns</span>
+                      <span>.transition-all</span>
                     </div>
                   </div>
                 </div>
@@ -152,21 +181,20 @@
     <section id="about" class="about hidden">
       <div class="container">
         <p class="section-tag">about demo</p>
-        <h2>Это учебный проект для демонстрации функциональности</h2>
+        <h2>Это учебный проект для демонстрации интерфейса и функциональности</h2>
         <p class="section-text">
           Здесь не важна реальная личная информация. Этот макет нужен, чтобы
-          показать верстку, взаимодействия, анимации, адаптив, визуальную
-          композицию и работу JavaScript в интерфейсе.
+          показать верстку, анимации, адаптив, взаимодействия и JavaScript в интерфейсе.
         </p>
 
         <div class="skills-grid">
           <div class="skill-card">
             <h3>HTML</h3>
-            <p>Семантическая структура, секции, навигация, карточки, модальное окно.</p>
+            <p>Семантическая структура, секции, навигация, карточки и модальное окно.</p>
           </div>
           <div class="skill-card">
             <h3>CSS</h3>
-            <p>Градиенты, сетки, hover-эффекты, анимации, glassmorphism и адаптив.</p>
+            <p>Градиенты, сетки, hover-эффекты, анимации, glassmorphism и адаптивность.</p>
           </div>
           <div class="skill-card">
             <h3>JavaScript</h3>
@@ -184,13 +212,13 @@
         <div class="project-grid">
           <article class="project-card"
             data-title="Landing Concept"
-            data-description="Большой промо-сайт с выразительным hero-блоком, секциями преимуществ и чистой визуальной структурой."
+            data-description="Большой промо-сайт с выразительным hero-блоком, секциями преимуществ и аккуратной визуальной структурой."
           >
             <div class="project-preview preview-one"></div>
             <div class="project-content">
               <span class="project-type">landing</span>
               <h3>Landing Concept</h3>
-              <p>Сильный первый экран, секции преимуществ и визуально дорогая подача.</p>
+              <p>Первый экран, секции преимуществ и визуально собранный интерфейс.</p>
             </div>
           </article>
 
@@ -239,7 +267,7 @@
             <strong>02</strong>
             <div>
               <h3>Hero-сцена</h3>
-              <p>Декоративный “ноутбук”, плавающие элементы, кодовые линии и UI-композиция.</p>
+              <p>Декоративный ноутбук, плавающие элементы, кодовые линии и UI-композиция.</p>
             </div>
           </div>
 
@@ -263,7 +291,7 @@
             <strong>05</strong>
             <div>
               <h3>Светлая тема</h3>
-              <p>Кнопка в шапке переключает всю палитру и карточки сайта.</p>
+              <p>Кнопка в шапке переключает всю палитру и внешний вид карточек.</p>
             </div>
           </div>
 

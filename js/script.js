@@ -146,7 +146,9 @@ function nextSlide() {
 }
 
 function startSlider() {
-  sliderInterval = setInterval(nextSlide, 3200);
+  if (slides.length > 1) {
+    sliderInterval = setInterval(nextSlide, 3200);
+  }
 }
 
 function resetSlider() {
