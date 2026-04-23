@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <h1 class="logo">Curry</h1>
+
+      <div class="burger">☰</div>
+
+      <ul class="menu">
+        <li><a href="#home">Главная</a></li>
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#projects">Проекты</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+
+      <button class="theme-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-bg-orb orb-1"></div>
+    <div class="hero-bg-orb orb-2"></div>
+
+    <div class="hero-container">
+      <div class="hero-left">
+        <p class="hero-kicker">Frontend Developer</p>
+        <h2>Создаю современные сайты с красивой анимацией и сильной подачей</h2>
+        <p class="hero-text">
+          Изучаю HTML, CSS и JavaScript. Собираю стильные интерфейсы,
+          адаптивные страницы и интерактивные элементы.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="hero-link-btn">Мои работы</a>
+          <a href="#contacts" class="hero-link-btn btn-secondary">Связаться</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-scene">
+          <div class="float-card float-card-top">
+            <span class="float-dot"></span>
+            <span class="float-line short"></span>
+            <span class="float-line"></span>
+          </div>
+
+          <div class="float-card float-card-bottom">
+            <span class="badge purple">JS</span>
+            <span class="badge blue">CSS</span>
+            <span class="badge dark">UI</span>
+          </div>
+
+          <div class="laptop">
+            <div class="laptop-screen">
+              <div class="screen-topbar">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="code-window">
+                <div class="code-sidebar">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <div class="code-content">
+                  <div class="code-line w-90"><span class="code-pink"></span></div>
+                  <div class="code-line w-70"><span class="code-blue"></span></div>
+                  <div class="code-line w-80"><span class="code-purple"></span></div>
+                  <div class="code-line w-60"><span class="code-green"></span></div>
+                  <div class="code-line w-85"><span class="code-blue"></span></div>
+                  <div class="code-line w-50"><span class="code-pink"></span></div>
+
+                  <div class="mini-panel">
+                    <div class="mini-panel-title">component.jsx</div>
+                    <div class="mini-line"></div>
+                    <div class="mini-line short"></div>
+                    <div class="mini-line"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="laptop-base">
+              <div class="laptop-shadow"></div>
+            </div>
+          </div>
+
+          <div class="floating-icon icon-html">HTML</div>
+          <div class="floating-icon icon-css">CSS</div>
+          <div class="floating-icon icon-js">JS</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about hidden">
+    <div class="container">
+      <h2>Обо мне</h2>
+      <p>
+        Я начинающий frontend developer. Изучаю HTML, CSS, JavaScript
+        и создаю современные сайты.
+      </p>
+
+      <div class="skills">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects hidden">
+    <div class="container">
+      <h2>Проекты</h2>
+
+      <div class="project-cards">
+        <div
+          class="project-card"
+          data-title="Landing Page"
+          data-description="Современный сайт для бизнеса с адаптивной версткой, анимациями и красивым интерфейсом."
+        >
+          <img src="images/project1.jpg" alt="Landing Page" />
+          <h3>Landing Page</h3>
+          <p>Современный сайт для бизнеса</p>
+        </div>
+
+        <div
+          class="project-card"
+          data-title="Portfolio"
+          data-description="Личный сайт-портфолио с темной темой, плавным скроллом и модальными окнами."
+        >
+          <img src="images/project2.jpg" alt="Portfolio" />
+          <h3>Portfolio</h3>
+          <p>Личный сайт портфолио</p>
+        </div>
+
+        <div
+          class="project-card"
+          data-title="Online Store"
+          data-description="Интернет-магазин с современным дизайном, карточками товаров и удобной структурой."
+        >
+          <img src="images/project3.jpg" alt="Online Store" />
+          <h3>Online Store</h3>
+          <p>Интернет-магазин</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts" class="about hidden">
+    <div class="container">
+      <h2>Контакты</h2>
+      <p>
+        Здесь позже можно добавить Telegram, GitHub, email или форму обратной связи.
+      </p>
+    </div>
+  </section>
+
+  <div class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2 class="modal-title">Название проекта</h2>
+      <p class="modal-description">Описание проекта</p>
+      <button class="modal-button">Посмотреть</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
